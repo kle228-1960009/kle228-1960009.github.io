@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jonas Brother Job Application</title>
+	</head>
+	
+	<body>
+		<form name="input" action="html_form_action.asp" method="get">
+	<h1>Apply here to be the Fifth Jonas Brother!</h1>
+	
+	<fieldset>
+		<legend><h2>Account Information</h2></legend>
+		First Name: <input type="type" name="firstname"><br>
+		Last Name: <input type="type" name="lastname"><br><br>
+		
+		Email: <input type="type" name="email"><br>
+		Username: <input type="type" name="username"><br>
+		Password: <input type="password" name="pwd"><br>
+	</fieldset>
+		<br>
+	<fieldset>
+		<legend><h2>Basic Questions</h2></legend>
+		Are you a fan of the Jonas Brothers?<br>
+		<input type="radio" name="answer" value="yes">YES<br>
+		<input type="radio" name="answer" value="no">NO<br><br>
+		
+		What year did you begin listening to the Jonas Brothers?
+		<br>
+		<select name="year">
+			<option value="notapplicable">Not Applicable</option>
+			<option value="2005">2005</option>
+			<option value="2006">2006</option>
+			<option value="2007">2007</option>
+			<option value="2008">2008</option>
+			<option value="2009">2009</option>
+			<option value="2010">2010</option>
+			<option value="2011">2011</option>
+			<option value="2012">2012</option>
+			<option value="2013">2013</option>
+			<option value="2019">2019</option>
+		</select>
+		<br><br>
+				
+		Who is your favorite Jonas Brother? <br>
+		<input type="checkbox" name="brother" value="Kevin"> Kevin <br>
+		<input type="checkbox" name="brother" value="Joe"> Joe <br>
+		<input type="checkbox" name="brother" value="Nick"> Nick <br>
+		<input type="checkbox" name="brother" value="Frankie"> Frankie <br>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend><h2>Quiz</h2></legend>
+		<h3>We need to know how much you know about the Jonas Brothers before you can be admited into the band.
+		Please answer these questions to the best of your ability.</h3>
+		
+		<br>
+		
+		<h3>Who is this?</h3>
+			<a>
+				<img src="http://www.gstatic.com/tv/thumb/persons/515344/515344_v9_ba.jpg" 
+				style="width: 400px; height: 500px; margin: 5px;">
+			</a>
+			<br>
+		<input type="radio" name="answer" value="elvispresley">Elvis Presley<br>
+		<input type="radio" name="answer" value="kevinjonas">Kevin Jonas<br>
+		<br>
+		
+		<h3>Which music video is this still frame from?</h3>
+			<a>
+					<img src="https://pbs.twimg.com/media/D0jLTsYWwAAuyra.jpg">
+				</a>
+				<br>
+			<input type="radio" name="answer" value="year3000">Year 3000<br>
+			<input type="radio" name="answer" value="sucker">Sucker<br>
+			<input type="radio" name="answer" value="burninup">Burnin' Up<br>
+			<br>
+			
+		<h3>Finish the lyric:</h3>
+		<h4><i>"Now I'm __________, over the edge I'm just __________, I never thought that I'd catch this _______ again"</i></h4>
+		<input type="radio" name="answer" value="speechless/breathless/lovebug">speechless/breathless/lovebug<br>
+		<input type="radio" name="answer" value="breathless/lovebug/speechless">breathless/lovebug/speechless<br>
+		<input type="radio" name="answer" value="breathless/speechless/lovebug">breathless/speechless/lovebug<br>
+		<input type="radio" name="answer" value="lovebug/breathless/speechless">lovebug/breathless/speechless<br>	
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend><h2>Personal Statement</h2></legend>
+		<label>When would you be available for practice?</label>
+		<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>		
+		</table>
+		<br>
+			Why do you think you'd make a good Jonas Brother?<br>
+			<textarea name="essay"></textarea>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend><h2>Resume</h2></legend>
+		<h4>Please upload a resume</h4>
+		<form action="/action_page.php">
+		  Select a file: <input type="file" name="myFile"><br><br>
+		</form>
+	</fieldset>
+		
+		<br>
+		
+		<input type="submit"onclick="alert('Ccongratulations on submiting your form! Unfortunately, the Jonas Brothers are not accepting applications at this time.')"value="Submit Application">
+		<input type="reset">
+	</body>
+</html>
